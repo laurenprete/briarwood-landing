@@ -1,0 +1,22 @@
+---
+import Base from '@/templates/Base.astro';
+import { Hero } from '@/partials/home/Hero';
+import { AppConfig } from '@/utils/AppConfig';
+import { ServiceSpotlight } from '@/partials/home/ServiceSpotlight';
+import { WhyChoose } from '@/partials/home/WhyChoose';
+
+
+const { title } = AppConfig;
+const { description } = AppConfig;
+---
+
+<Base head={{ title, description }}>
+<Hero/>
+<ServiceSpotlight/>
+<WhyChoose/>
+
+
+
+  
+  
+</Base>

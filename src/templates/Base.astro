@@ -1,0 +1,40 @@
+---
+import { Footer } from "@/partials/Footer";
+import { Navbar } from "@/partials/Navbar";
+import { AppConfig } from "@/utils/AppConfig";
+
+export interface Props {
+  head: {
+    title: string;
+    description: string;
+  };
+}
+
+const {
+  head: { title, description },
+} = Astro.props as Props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content={AppConfig.author} />
+    <script src="https://kit.fontawesome.com/c935a4239f.js" crossorigin="anonymous" async></script>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  </head>
+  <body class="bg-slate-900 text-gray-100">
+    <!-- <Navbar /> -->
+    <div>
+      <Navbar  client:only="react" />
+      <slot></slot>
+      <Footer />
+    </div>
+  </body>
+</html>

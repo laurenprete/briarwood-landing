@@ -1,0 +1,78 @@
+---
+//import type { IFrontmatter } from 'astro-boilerplate-components';
+
+import Base from '@/templates/Base.astro';
+import { AppConfig } from '@/utils/AppConfig';
+
+//const allPosts = await Astro.glob<IFrontmatter>('./posts/*.md');
+
+const { title } = AppConfig;
+const { description } = AppConfig;
+---
+
+<Base head={{ title, description }}>
+ 
+    <section class="py-12 px-4 bg-zinc-300 text-slate-950 shadow-2xl">
+      <div class="text-center">
+        <h1 class="text-4xl jura-header font-bold">About Briarwood Software</h1>
+      </div>
+      <div class="max-w-6xl py-6 mx-auto">
+        <p class="text-lg py-4">
+            Briarwood Software specializes in crafting custom software, websites, and e-commerce solutions to help 
+            businesses streamline operations, automate tasks, and grow efficiently without the expense and rigidity of off-the-shelf solutions.
+        </p>
+        <p class="text-lg py-4">
+            Unlike big agencies that push generic, overpriced products, we take a personalized approach. We work directly 
+            with you to build practical, user-friendly software that fits your use-case perfectly.
+        </p>
+      </div>
+      <div class="flex items-center justify-center gap-x-6">
+        <a href="/contact/"
+          class="rounded-md bg-emerald-500 px-6 py-4 text-lg lg:text-xl font-semibold text-zinc-100 shadow-md hover:bg-sky-500 transition-all duration-300">
+          Get in Touch
+        </a>
+      </div>
+    </section>
+
+    <section class="py-12 px-4 shadow-2xl">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-center lg:text-left text-3xl font-semibold jura-header">About the Founder</h2>
+        <div class="mt-6">
+          
+          <div class="lg:flex">
+            <div class="lg:w-2/5 px-10 my-6 order-first lg:order-last flex items-center justify-center">
+              <img
+                src="/assets/images/lauren.jpg"
+                alt="Lauren"
+                class="img-shadow w-28 md:w-36 lg:w-48 rounded-full border-2 border-slate-800 object-cover"
+              />
+            </div>
+            <div class="lg:w-4/5">
+            <h3 class="text-xl font-medium">Hi, I'm Lauren - Your Software Expert & Business Partner</h3>
+            <p class="mt-4 text-lg">
+                With over 8 years of experience as a full-stack software engineer, I've built everything from 
+                custom business tools to complex automation systems. Throughout my career, I've also found myself acting in the capacity of a business analyst while gathering requirements for the software I build. 
+                I'm skilled at figuring out exactly which problems need to be solved, in which order, and how.
+            </p>
+            <p class="mt-4 text-lg">
+              As a result, I founded Briarwood Software to help 
+                business owners modernize and simplify their workflows without the headache of tech jargon, expensive middlemen, or rigid off-the-shelf solutions that don't fit their needs.
+          </p>
+          </div>
+          </div>
+
+
+
+            <h3 class="mt-6 text-xl font-semibold ">What Sets Me Apart?</h3>
+            <ul class="mt-4 space-y-3 text-lg list-disc list-inside">
+                <li><strong>Tech-Savvy, But Business-Minded</strong> - I don't just write code. I help businesses solve real-world problems with technology.</li>
+                <li><strong>No Outsourcing, No Gimmicks</strong> - You work directly with me, ensuring top-quality results and clear communication.</li>
+                <li><strong>Long-Term Support</strong> - I don't just build and disappear. I offer ongoing maintenance and updates to keep things running smoothly.</li>
+            </ul>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+</Base>
