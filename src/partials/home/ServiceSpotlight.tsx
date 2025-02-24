@@ -11,9 +11,9 @@ const ServiceSpotlight = () => {
           </p>
         </div>
 
-        <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base/7 text-slate-950 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-16">
+        <dl className="mx-auto mt-12 grid max-w-2xl grid-cols-1 gap-8 text-base/7 text-slate-950 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8">
           {/* Card 1 */}
-          <div className="bg-zinc-100 rounded-md p-6 shadow-md">
+          <div className="bg-zinc-100 rounded-lg p-6 shadow-xl">
             <dt className="flex items-center mb-2 font-semibold text-slate-900">
               <i className="fa-solid fa-code mr-2"></i>
               Custom Business Software
@@ -24,7 +24,7 @@ const ServiceSpotlight = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-zinc-100 rounded-md p-6 shadow-md">
+          <div className="bg-zinc-100 rounded-lg p-6 shadow-xl">
             <dt className="flex items-center mb-2 font-semibold text-slate-900">
               <i className="fa-solid fa-globe mr-2"></i>
               Website Design and Hosting
@@ -35,7 +35,7 @@ const ServiceSpotlight = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-zinc-100 rounded-md p-6 shadow-md">
+          <div className="bg-zinc-100 rounded-lg p-6 shadow-xl">
             <dt className="flex items-center mb-2 font-semibold text-slate-900">
               <i className="fa-solid fa-cart-shopping mr-2"></i>
               E-Commerce and Online Payments
@@ -46,7 +46,7 @@ const ServiceSpotlight = () => {
           </div>
 
           {/* Card 4 */}
-          <div className="bg-zinc-100 rounded-md p-6 shadow-md">
+          <div className="bg-zinc-100 rounded-lg p-6 shadow-xl">
             <dt className="flex items-center mb-2 font-semibold text-slate-900">
               <i className="fa-solid fa-link mr-2"></i>
               Systems Integration &amp; API Development
@@ -57,7 +57,7 @@ const ServiceSpotlight = () => {
           </div>
 
           {/* Card 5 */}
-          <div className="bg-zinc-100 rounded-md p-6 shadow-md">
+          <div className="bg-zinc-100 rounded-lg p-6 shadow-xl">
             <dt className="flex items-center mb-2 font-semibold text-slate-900">
               <i className="fa-solid fa-gears mr-2"></i>
               Workflow &amp; Process Automation
@@ -68,13 +68,15 @@ const ServiceSpotlight = () => {
           </div>
 
           {/* Card 6 */}
-          <div className="bg-zinc-100 rounded-md p-6 shadow-md">
+          <div className="bg-zinc-100 rounded-lg p-6 shadow-xl">
             <dt className="flex items-center mb-2 font-semibold text-slate-900">
               <i className="fa-solid fa-wrench mr-2"></i>
               Managed Hosting &amp; Support
             </dt>
             <dd>
-              Leave the hosting and maintenance to us - we'll keep things running smoothly so you can focus on the business aspect.
+            Let us handle the hosting and maintenance while you focus on growing your business.
+             We minimize downtime and technical hassles so you can dedicate your time to what matters most.
+
             </dd>
           </div>
         </dl>
