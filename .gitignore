@@ -21,3 +21,8 @@ pnpm-debug.log*
 *.pem
 Thumbs.db
 .history
+
+# amplify
+.amplify
+amplify_outputs*
+amplifyconfiguration*
