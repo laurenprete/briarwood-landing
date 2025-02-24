@@ -35,14 +35,14 @@ const ServiceSpotlight = () => {
           <i className="fa-solid fa-link mr-2"></i>
           Systems Integration & API Development
           </dt>
-          <dd>Connect your tools (CRM, accounting, inventory) for a smoother workflow.</dd>
+          <dd>Unify your essential tools and information systems — CRM, accounting, inventory, e-commerce, and more — for a streamlined workflow that reduces manual effort and improves accuracy.</dd>
         </div>
         <div className="relative pl-9">
           <dt className="inline font-semibold text-slate-900">
           <i className="fa-solid fa-gears mr-2"></i>
           Workflow & Process Automation 
           </dt>
-          <dd>Eliminate manual tasks with smart automation that saves time and reduces errors.</dd>
+          <dd>Streamline your business operations by automating repetitive tasks like data entry, data syncing, invoice processing, and customer notifications. We help you reduce errors and improve efficiency.</dd>
         </div>
         <div className="relative pl-9">
           <dt className="inline font-semibold text-slate-900">
