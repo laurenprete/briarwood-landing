@@ -52,7 +52,7 @@ const ServiceSpotlight = () => {
           <dd>Leave the hosting and maintenance to us - we'll keep things running smoothly so you can focus on the business aspect.</dd>
         </div>
       </dl>
-      <a href="/services/" className="text-sky-600 hover:text-sky-500 font-semibold float-right mt-6 cursor-pointer mx-6">Explore our services  <i className="fa-solid fa-arrow-right ml-2"></i></a>
+      <a href="/services/" className="text-sky-600 hover:text-sky-500 font-semibold float-right mt-6 cursor-pointer mx-6 text-lg">Explore our services  <i className="fa-solid fa-arrow-right ml-2"></i></a>
     </div>
   </section>
 )};
