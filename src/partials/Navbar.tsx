@@ -21,7 +21,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5 flex items-center">
-          <img src="/assets/images/logo_only.png" alt="Briarwood Software" className='w-12 h-12 lg:w-16 lg:h-16'></img>
+          <img src="/assets/images/logo_only.png" alt="Briarwood Software Logo" className='w-12 h-12 lg:w-16 lg:h-16'></img>
             <span className='ml-1 text-md lg:text-xl jura-header tracking-tighter'>Briarwood Software</span>
           </a>
         </div>
