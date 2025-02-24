@@ -11,7 +11,7 @@ const Hero = () => {
             <h1 className="text-balance text-3xl font-bold tracking-tight text-zinc-100 sm:text-5xl jura-header">
               We Build Software,<br />You Build Your Business.
             </h1>
-            <p className="mt-8 text-pretty text-lg text-zinc-200 sm:text-xl/8">
+            <p className="mt-8 p-2 sm:text-center text-lg text-zinc-200 sm:text-xl/8">
               Briarwood Software builds custom websites and web applications designed to fit your business needs.
               Our solutions are user-friendly, scalable, and fully maintained, allowing you to focus on growth while we handle the tech.
               Whether you're a new venture needing end-to-end consulting or an established business looking for seamless integrations, we're here to help.
