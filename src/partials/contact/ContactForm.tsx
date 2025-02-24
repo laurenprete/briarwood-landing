@@ -204,11 +204,11 @@ export const ContactForm: React.FC = () => {
               className="block w-full rounded-md bg-zinc-100 px-3.5 py-2 text-base text-slate-950 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-slate-600"
             >
               <option value="">Select</option>
-              <option value="2000-5000">I want a free, no-risk consultation</option>
-              <option value="2000-5000">$1,000 - $5,000</option>
-              <option value="5000-10000">$5,000 - $10,000</option>
-              <option value="10000-20000">$10,000 - $20,000</option>
-              <option value="20000+">$20,000+</option>
+              <option value="Free Consultation">I want a free, no-risk consultation</option>
+              <option value="2,000-5,000">$1,000 - $5,000</option>
+              <option value="5,000-10,000">$5,000 - $10,000</option>
+              <option value="10,000-20,000">$10,000 - $20,000</option>
+              <option value="20,000+">$20,000+</option>
             </select>
           </div>
         </div>
