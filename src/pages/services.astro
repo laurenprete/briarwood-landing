@@ -11,75 +11,79 @@ const { description } = AppConfig;
 ---
 
 <Base head={{ title, description }}>
-  <section class="bg-slate-950 text-zinc-100 py-16 px-6">
-    <div class="max-w-6xl mx-auto">
-      
-        <h1 class="jura-header text-4xl text-center text-zinc-100 mb-12">Our Services</h1>
+  
+  <div class="relative isolate overflow-hidden px-6 py-8 sm:py-12 lg:px-8 bg-slate-950">
+    <div class="mx-auto max-w-2xl text-center">
+      <h1 class="jura-header text-4xl text-center text-zinc-100 mb-12">Our Services</h1>
+      <div class="mt-10 flex items-center justify-center gap-x-6">
+        <a href="/contact/"
+          class="rounded-md bg-emerald-500 px-6 py-4 md:text-lg lg:text-xl font-semibold text-zinc-100 shadow-md hover:bg-sky-500 transition-all duration-300">
+          Get a Free Consultation & Quote <i class="fa-solid fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <section class="bg-zinc-300 text-slate-950 py-12 px-6">
+    <div class="max-w-7xl mx-auto">      
         
+        <div class="lg:grid lg:grid-cols-2">
+
+       
         <!-- Custom Software Development -->
-        <section class="bg-zinc-300 p-8 rounded-xl shadow-2xl mb-12">
-            <h2 class="jura-header text-3xl text-slate-900 mb-6"><i class="fa-solid fa-code mr-2"></i>Custom Software Development</h2>
-            <ul class="space-y-4 text-slate-800">
-                <li><strong>Business Process Improvement</strong> <div>Replace spreadsheets and disjointed manual processes with custom software and automation.</div></li>
-                <li><strong>Database & Inventory Management</strong> <div>Organize and manage your business data efficiently.</div></li>
-                <li><strong>Workflow & Task Automation</strong> <div>Automate repetitive tasks to save time and reduce manual errors.</div></li>
-                <li><strong>Integrations & API Development</strong> <div>Connect tools like QuickBooks, CRM, Warehouse Management Systems, Shopify and more.</div></li>
-                <li><strong>Custom Dashboards/Reporting</strong> <div>Get real-time actionable business insights from your data.</div></li>
+        <section class="bg-slate-900 p-6 md:p-8 rounded-xl shadow-2xl mb-12 mx-2">
+            <h2 class="text-xl md:text-2xl text-zinc-300 mb-6 font-semibold">
+              <i class="fa-solid fa-code mr-2"></i>Custom Software Development
+            </h2>
+            <ul class="space-y-6 text-zinc-200">
+                <li><span class="font-bold">Business Process Improvement</span> <div>Replace spreadsheets and disjointed manual processes with custom software and automation.</div></li>
+                <li><span class="font-bold">Database & Inventory Management</span> <div>Organize and manage your business data efficiently.</div></li>
+                <li><span class="font-bold">Workflow & Task Automation</span> <div>Automate repetitive tasks to save time and reduce manual errors.</div></li>
+                <li><span class="font-bold">Integrations & API Development</span> <div>Connect tools like QuickBooks, CRM, Warehouse Management Systems, Shopify and more.</div></li>
+                <li><span class="font-bold">Custom Dashboards/Reporting</span> <div>Get real-time actionable business insights from your data.</div></li>
+                <li><span class="font-bold">Custom Client or Vendor Portals</span> <div>Build secure, self-service portals to improve customer and vendor interactions.</div></li>
             </ul>
-            <div class="text-right">
-              <a href="/contact/" class="rounded-md bg-emerald-500 px-4 py-2 lg:text-lg font-semibold text-zinc-100 shadow-md hover:bg-sky-500 transition-all duration-300">
-                  Get Started
-              </a>
-          </div>
         </section>
 
         <!-- Website Development & Hosting -->
-        <section class="bg-zinc-300 p-8 rounded-xl shadow-2xl mb-12">
-            <h2 class="jura-header text-3xl text-slate-900 mb-6"><i class="fa-solid fa-globe mr-2"></i>Website Development & Hosting</h2>
-            <ul class="space-y-4 text-slate-800">
-                <li><strong>Custom Business Websites</strong> <div>Professional, easy-to-manage websites of any size optimized for accessibility on all devices.</div></li>
-                <li><strong>E-Commerce Solutions</strong> <div>Sell online with secure payment processing.</div></li>
-                <li><strong>Website Redesign & Optimization</strong> <div>Modernize outdated websites.</div></li>
-                <li><strong>SEO Optimization</strong> <div>Improve visibility and search result positions to attract customers.</div></li>
-                <li><strong>Branding & Visual Identity</strong> <div>Elevate your business with a fresh logo, cohesive color schemes, and a modern design that aligns with your brand.</div></li>
-                <li><strong>Managed Hosting & Maintenance</strong> <div>We handle security updates and long-term support so you don't have to.</div></li>
+        <section class="bg-slate-900 p-6 md:p-8 rounded-xl shadow-2xl mb-12 mx-2">
+          <h2 class="text-xl md:text-2xl text-zinc-300 mb-6 font-semibold">
+              <i class="fa-solid fa-globe mr-2"></i>Website Development & Hosting
+              </h2>
+            <ul class="space-y-6 text-zinc-200">
+                <li><span class="font-bold">Custom Business Websites</span> <div>Professional, easy-to-manage websites of any size optimized for accessibility on all devices.</div></li>
+                <li><span class="font-bold">E-Commerce Solutions</span> <div>Launch your online store with secure and seamless payment solutions</div></li>
+                <li><span class="font-bold">Website Redesign & Optimization</span> <div>Transform outdated websites with modern designs and improved performance.</div></li>
+                <li><span class="font-bold">SEO Optimization</span> <div>Boost your visibility and bring in more customers with strategic SEO</div></li>
+                <li><span class="font-bold">Branding & Visual Identity</span> <div>Elevate your business with a fresh logo, cohesive color schemes, and a modern design that aligns with your brand.</div></li>
+                <li><span class="font-bold">Managed Hosting & Maintenance</span> <div>We handle security updates and long-term support so you don't have to.</div></li>
             </ul>
-            <div class="text-right">
-              <a href="/contact/" class="rounded-md bg-emerald-500 px-4 py-2 lg:text-lg font-semibold text-zinc-100 shadow-md hover:bg-sky-500 transition-all duration-300">
-                  Get Started
-              </a>
-          </div>
         </section>
 
         <!-- Technical Consulting & IT Advisory -->
-        <section class="bg-zinc-300 p-8 rounded-xl shadow-2xl mb-12">
-            <h2 class="jura-header text-3xl text-slate-900 mb-6"><i class="fa-solid fa-computer mr-2"></i>Technical Consulting & IT Advisory</h2>
-            <ul class="space-y-4 text-slate-800">
-                <li><strong>Tech Strategy Consulting</strong> <div>Not sure what tech you need? Our no-risk consultation services will help you find the best tools for your business, free of charge. If you need integration, setup, or support, we're here to help.</div></li>
-                <li><strong>Software & System Audits</strong> <div>Identify security risks and inefficiencies. Keep yourself and your customers safe from threats.</div></li>
-                <li><strong>Data Migration & Cloud Solutions</strong> <div>Future-proof your business by transitioning to modern, scalable solutions.</div></li>
+        <section class="bg-slate-900 p-6 md:p-8 rounded-xl shadow-2xl mb-12 mx-2">
+          <h2 class="text-xl md:text-2xl text-zinc-300 mb-6 font-semibold">
+              <i class="fa-solid fa-computer mr-2"></i>Technical Consulting & IT Advisory
+            </h2>
+            <ul class="space-y-6 text-zinc-200">
+                <li><span class="font-bold">Tech Strategy Consulting</span> <div>Not sure what tech you need? Our no-risk consultation services will help you find the best tools for your business, free of charge. If you need integration, setup, or support, we're here to help.</div></li>
+                <li><span class="font-bold">Software & System Audits</span> <div>Identify security risks and inefficiencies. Keep yourself and your customers safe from threats.</div></li>
+                <li><span class="font-bold">Data Migration & Cloud Solutions</span> <div>Future-proof your business by transitioning to modern, scalable solutions.</div></li>
             </ul>
-            <div class="text-right">
-              <a href="/contact/" class="rounded-md bg-emerald-500 px-4 py-2 lg:text-lg font-semibold text-zinc-100 shadow-md hover:bg-sky-500 transition-all duration-300">
-                  Get Started
-              </a>
-          </div>
         </section>
 
         <!-- Ongoing Support & Maintenance -->
-        <section class="bg-zinc-300 p-8 rounded-xl shadow-2xl">
-            <h2 class="jura-header text-3xl text-slate-900 mb-6"><i class="fa-solid fa-wrench mr-2"></i>Ongoing Support & Maintenance</h2>
-            <ul class="space-y-4 text-slate-800">
-                <li><strong>Software Updates & Bug Fixes</strong> <div>Keep your systems running smoothly.</div></li>
-                <li><strong>Priority Support & Troubleshooting</strong> <div>Fast response times when you need help.</div></li>
-                <li><strong>Flexible Maintenance Plans</strong> <div>Affordable long-term support options.</div></li>
+        <section class="bg-slate-900 p-6 md:p-8 rounded-xl shadow-2xl mb-12 mx-2">
+          <h2 class="text-xl md:text-2xl text-zinc-300 mb-6 font-semibold">
+              <i class="fa-solid fa-wrench mr-2"></i>Ongoing Support & Maintenance
+            </h2>
+            <ul class="space-y-6 text-zinc-200">
+                <li><span class="font-bold">Software Updates & Bug Fixes</span> <div>Ensure your software stays secure, efficient, and up-to-date with regular updates and support.</div></li>
+                <li><span class="font-bold">Priority Support & Troubleshooting</span> <div>Get fast, expert assistance when you need it most, directly from the person who worked on your project.</div></li>
+                <li><span class="font-bold">Flexible Maintenance Plans</span> <div>Choose a maintenance plan that fits your needs and budget.</div></li>
             </ul>
-            <div class="text-right">
-              <a href="/contact/" class="rounded-md bg-emerald-500 px-4 py-2 lg:text-lg font-semibold text-zinc-100 shadow-md hover:bg-sky-500 transition-all duration-300">
-                  Get Started
-              </a>
-          </div>
         </section>
+      </div>
     </div>
 
 </section>
