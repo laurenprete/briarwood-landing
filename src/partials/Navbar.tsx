@@ -44,7 +44,7 @@ const Navbar = () => {
             <a
               key={item.name}
               href={item.href}
-              className={`text-sm font-semibold leading-6 px-3 py-2 rounded-md transition ${currentPath === item.href
+              className={`text-sm font-semibold leading-6 px-3 py-2 rounded-md transition-all duration-300 ${currentPath === item.href
                   ? 'bg-zinc-300 text-gray-800'  // Highlight current page
                   : 'hover:bg-zinc-300 hover:text-gray-800' // Hover effect
                 }`}

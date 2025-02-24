@@ -18,7 +18,7 @@ const Hero = () => {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a href="/contact/"
-                className="rounded-md bg-emerald-600 px-6 py-4 text-lg lg:text-xl font-semibold text-zinc-100 shadow-md hover:bg-sky-500 transition-all duration-300">
+                className="rounded-md bg-emerald-600 px-6 py-4 text-lg lg:text-xl font-semibold text-white shadow-md hover:bg-sky-500 transition-all duration-300">
                 Get a Free Consultation & Quote <i className="fa-solid fa-arrow-right ml-2"></i>
               </a>
             </div>
