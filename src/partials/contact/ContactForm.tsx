@@ -77,7 +77,7 @@ export const ContactForm: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="lg:w-1/2 bg-zinc-300 py-16 px-16 lg:py-12">
+    <form onSubmit={handleSubmit} className="lg:w-1/2 bg-zinc-300 py-16 px-8 sm:px-16 lg:py-12 xl:px-24">
       <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
         <div>
           <label

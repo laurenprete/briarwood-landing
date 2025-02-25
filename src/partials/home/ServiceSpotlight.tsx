@@ -6,9 +6,6 @@ const ServiceSpotlight = () => {
           <p className="text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl jura-header">
             Services Spotlight
           </p>
-          <p className="mt-6 text-lg/8 text-slate-950">
-            Streamline operations with custom software and websites designed for ease of use, long-term support, and business growth.
-          </p>
         </div>
 
         <dl className="mx-auto mt-12 grid max-w-2xl grid-cols-1 gap-8 text-base/7 text-slate-950 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-x-8">
