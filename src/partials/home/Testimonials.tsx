@@ -11,8 +11,8 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="bg-slate-900 py-16 px-6">
-      <h2 className="text-3xl font-bold text-zinc-100 text-center jura-header">
+    <section className="bg-zinc-300 py-16 px-6">
+      <h2 className="text-3xl font-bold text-slate-950 text-center jura-header">
         What Our Clients Say
       </h2>
       <div
@@ -24,13 +24,13 @@ const Testimonials = () => {
       >
         {testimonials.map((t, i) => (
           <div key={i} className="border-l-4 border-emerald-600 pl-6 py-4">
-            <blockquote className="text-zinc-200 leading-relaxed italic text-lg mb-6">
+            <blockquote className="text-slate-700 leading-relaxed italic text-lg mb-6">
               &ldquo;{t.quote}&rdquo;
             </blockquote>
             <div>
-              <p className="text-zinc-100 font-semibold">{t.name}</p>
-              <p className="text-zinc-400 text-sm">{t.title}</p>
-              <p className="text-zinc-400 text-sm">{t.org}</p>
+              <p className="text-slate-900 font-semibold">{t.name}</p>
+              <p className="text-slate-500 text-sm">{t.title}</p>
+              <p className="text-slate-500 text-sm">{t.org}</p>
             </div>
           </div>
         ))}
