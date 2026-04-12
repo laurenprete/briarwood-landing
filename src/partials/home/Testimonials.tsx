@@ -3,6 +3,7 @@ const testimonials = [
     quote:
       "Lauren Prete developed a custom website from the ground up in support of multiple MIT-led research and education initiatives. She delivered a streamlined, user-friendly, and highly effective platform that successfully integrates complex scientific and educational content for both general audiences and technical experts. Lauren is fast, thoughtful, and proactive\u2014anticipating challenges and delivering practical solutions with professionalism and ease. She was a pleasure to work with, and the MIT team wholeheartedly recommends her.",
     name: "Anthony Salazar",
+    photo: "/assets/images/anthony.avif",
     title:
       "Program Manager, MIT Microphotonics Center & Initiative for Knowledge and Innovation in Manufacturing",
     org: "Massachusetts Institute of Technology",
@@ -27,10 +28,19 @@ const Testimonials = () => {
             <blockquote className="text-slate-700 leading-relaxed italic text-lg mb-6">
               &ldquo;{t.quote}&rdquo;
             </blockquote>
-            <div>
-              <p className="text-slate-900 font-semibold">{t.name}</p>
-              <p className="text-slate-500 text-sm">{t.title}</p>
-              <p className="text-slate-500 text-sm">{t.org}</p>
+            <div className="flex items-center gap-4">
+              {t.photo && (
+                <img
+                  src={t.photo}
+                  alt={t.name}
+                  className="w-12 h-12 rounded-full object-cover"
+                />
+              )}
+              <div>
+                <p className="text-slate-900 font-semibold">{t.name}</p>
+                <p className="text-slate-500 text-sm">{t.title}</p>
+                <p className="text-slate-500 text-sm">{t.org}</p>
+              </div>
             </div>
           </div>
         ))}
