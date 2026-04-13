@@ -47,6 +47,7 @@ export const ContactForm: React.FC = () => {
         'https://to3krsu4hlclor2az3t2hvgawa0igqtv.lambda-url.us-east-1.on.aws/',
         {
           method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(formData),
         }
       );
