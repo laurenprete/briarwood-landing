@@ -39,38 +39,29 @@ export const handler = async (event) => {
     </html>
   `;
 
-  // 3. Construct the payload for SendGrid
-  const sendGridPayload = {
-    personalizations: [
-      {
-        to: [{ email: 'lauren@briarwoodsoftware.com' }] // Replace with your recipient
-      }
-    ],
-    from: { email: 'projects@briarwoodsoftware.com' }, // Must be verified in SendGrid
+  // 3. Construct the payload for SMTP2Go
+  const smtp2goPayload = {
+    api_key: process.env.SMTP2GO_API_KEY,
+    to: ['lauren@briarwoodsoftware.com'],
+    sender: 'projects@briarwoodsoftware.com',
     subject: 'New Project Request',
-    content: [
-      {
-        type: 'text/html',
-        value: htmlContent
-      }
-    ]
+    html_body: htmlContent,
   };
 
-  // 4. Send the email via SendGrid using fetch
+  // 4. Send the email via SMTP2Go
   try {
-    const response = await fetch('https://api.sendgrid.com/v3/mail/send', {
+    const response = await fetch('https://api.smtp2go.com/v3/email/send', {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${process.env.SENDGRID_API_KEY}`,
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
-      body: JSON.stringify(sendGridPayload)
+      body: JSON.stringify(smtp2goPayload),
     });
 
-    // Check if SendGrid returned an error
+    // Check if SMTP2Go returned an error
     if (!response.ok) {
       const errorText = await response.text();
-      throw new Error(`SendGrid error (status ${response.status}): ${errorText}`);
+      throw new Error(`SMTP2Go error (status ${response.status}): ${errorText}`);
     }
 
     // If successful, return a success message
@@ -82,7 +73,7 @@ export const handler = async (event) => {
       body: `<p>Email sent successfully!</p>`
     };
   } catch (error) {
-    console.error('Error sending email via SendGrid:', error);
+    console.error('Error sending email via SMTP2Go:', error);
     return {
       statusCode: 500,
       body: 'An error occurred while sending the email.'
